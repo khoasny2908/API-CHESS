@@ -497,7 +497,7 @@ app.get("/api/board/:id", async (req, res) => {
   const { id } = req.params;
   const data = JSON.parse(fs.readFileSync(path, 'utf8'));
   const foundIndex = data.find((item) => item.id === id);
-  const imagePath = __dirname + `/chess/chess/${id}.png`;
+  const imagePath = __dirname + `/chess/${id}.png`;
   var fen;
   if (!foundIndex) {
     fen = "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1"; //chess.fen();
