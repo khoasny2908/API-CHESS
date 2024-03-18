@@ -15,7 +15,7 @@ app.use(express.static(__dirname + "/chess"));
 const path = __dirname + "/game_state.json";
 const pathKey = __dirname + "/data_key.json"
 
-const domain = 'https://991e1570-8c11-48f6-8515-bc3086cd7d79-00-3bnxt3s7ftgsj.picard.replit.dev'
+const domain = 'https://api-chess-9aw0.onrender.com'
 
 const chess = new Chess();
 const canvasWidth = 700;
